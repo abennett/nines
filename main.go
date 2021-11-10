@@ -50,7 +50,7 @@ func main() {
 	}
 	uptime, err := strconv.ParseFloat(os.Args[1], 64)
 	if err != nil {
-		fmt.Printf("unable to convert %s to float", os.Args[1])
+		fmt.Printf("unable to convert %s to float\n", os.Args[1])
 		os.Exit(1)
 	}
     w := tabwriter.NewWriter(os.Stdout, 0, 8, 0, '\t', tabwriter.AlignRight)
